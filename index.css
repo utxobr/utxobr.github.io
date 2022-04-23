@@ -1,0 +1,52 @@
+h1, h2, h3 {
+	font-family: sans-serif;
+}
+
+h1 {
+        margin: 4rem 0 2rem 0;
+}
+
+h2, h3 {
+        margin: 2rem 0 2rem 0;
+}
+
+footer {
+        font-family: monospace;
+}
+
+blockquote {
+	border-left: 3px solid #eee;
+	color: #333;
+	margin: 2rem 0rem 2rem 1rem;
+	padding-left: 15px;
+}
+
+p, li {
+        text-rendering: optimizelegibility;
+        color: rgba(0, 0, 0,0.84);
+        line-height: 1.2;
+}
+
+pre {
+        margin: 2rem 0rem 2rem 1rem;
+        color: #333;
+}
+
+@media screen and (min-width: 15cm) {
+        body {
+                max-width: 18cm;
+                padding-left: 8mm;
+                padding-right: 8mm;
+        }
+}
+
+hr {
+	background-color: lightgray;
+	border: none;
+	height: 1px;
+        margin: 3rem 0 3rem 0;
+}
+
+a {
+        color: blue;
+}
