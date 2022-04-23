@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+
+  <body>
+    <h1 itemprop="name headline">{{ .Title }}</h1>
+
+    <p>
+      <time datetime="{{ .Date.Format "2006-01-02T15:04:05-0700" | safeHTML }}" itemprop="datePublished">
+        <i>{{ .Date.Format "2006-01-02" -}}</i>
+      </time> <a href="https://twitter.com/utxobr">utxobr</a>
+    </p>
+
+    <br />
+
+    <article>
+      <section class= "article-body" itemprop="articleBody">
+        {{ .Content }}
+      </section>
+    </article>
+
+    {{ partial "footer.html" }}
+  </body>
+</html>
